@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GreenCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Green Code-3" translatesAutoresizingMaskIntoConstraints="NO" id="6qU-YB-UFB">
+                                <rect key="frame" x="0.0" y="242" width="415" height="415"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlG-PN-zMm">
+                                <rect key="frame" x="67" y="717" width="289" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="24"/>
+                                <state key="normal" title="need help recycling?">
+                                    <color key="titleColor" red="0.093610115349999995" green="0.50171649460000001" blue="0.23724618550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iZg-6j-Tab" kind="show" id="Uwb-5v-A1p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="greenCodeLogo" destination="6qU-YB-UFB" id="Cjk-Zj-s4T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="YcI-v5-b58">
+            <objects>
+                <viewController id="iZg-6j-Tab" customClass="SecondViewController" customModule="GreenCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XaR-pn-s7y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLJ-UV-eDr">
+                                <rect key="frame" x="44" y="217" width="326" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Is this item clean and dry?">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMd-fJ-g8b">
+                                <rect key="frame" x="143" y="356" width="128" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.093610115349999995" green="0.50171649460000001" blue="0.23724618550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
+                                <state key="normal" title="yes">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aV2-Lh-J4T" kind="show" id="d3e-De-IFM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQe-xG-pTs">
+                                <rect key="frame" x="143" y="437" width="128" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.093610115349999995" green="0.50171649460000001" blue="0.23724618550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
+                                <state key="normal" title="no">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5T1-bt-klE" kind="show" id="gmJ-Mz-VNt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mA8-FL-oLQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nqb-GS-34d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C7M-8r-jqu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="718.84057971014499" y="93.75"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="ZpL-lM-uIZ">
+            <objects>
+                <viewController id="aV2-Lh-J4T" customClass="ThirdViewController" customModule="GreenCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YtR-Gh-mqg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vkw-TE-zlG">
+                                <rect key="frame" x="44" y="217" width="326" height="137"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="137" id="3uf-nB-W0F"/>
+                                    <constraint firstAttribute="width" constant="326" id="m1W-ha-h2P"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="What type of material would you like to recycle?">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUY-7F-Tjs">
+                                <rect key="frame" x="143" y="356" width="128" height="50"/>
+                                <color key="backgroundColor" red="0.093610115349999995" green="0.50171649460000001" blue="0.23724618550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="lQY-gU-qIQ"/>
+                                    <constraint firstAttribute="width" constant="128" id="ymJ-gl-EkZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
+                                <state key="normal" title="yes">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbI-gb-ffe">
+                                <rect key="frame" x="143" y="437" width="128" height="50"/>
+                                <color key="backgroundColor" red="0.093610115349999995" green="0.50171649460000001" blue="0.23724618550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="bV0-HC-erK"/>
+                                    <constraint firstAttribute="height" constant="50" id="nQm-1V-S25"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
+                                <state key="normal" title="no">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wg9-X8-2CT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wg9-X8-2CT" firstAttribute="trailing" secondItem="zbI-gb-ffe" secondAttribute="trailing" constant="143" id="4Ow-ke-B6R"/>
+                            <constraint firstItem="zbI-gb-ffe" firstAttribute="leading" secondItem="Wg9-X8-2CT" secondAttribute="leading" constant="143" id="5PH-Kp-lTg"/>
+                            <constraint firstItem="gUY-7F-Tjs" firstAttribute="leading" secondItem="Wg9-X8-2CT" secondAttribute="leading" constant="143" id="BZ4-wO-qQD"/>
+                            <constraint firstItem="Vkw-TE-zlG" firstAttribute="leading" secondItem="Wg9-X8-2CT" secondAttribute="leading" constant="44" id="VbN-Wn-0Mz"/>
+                            <constraint firstItem="gUY-7F-Tjs" firstAttribute="top" secondItem="Vkw-TE-zlG" secondAttribute="bottom" constant="2" id="ZVt-qk-NbN"/>
+                            <constraint firstItem="Wg9-X8-2CT" firstAttribute="trailing" secondItem="gUY-7F-Tjs" secondAttribute="trailing" constant="143" id="bMS-ff-xMq"/>
+                            <constraint firstItem="Vkw-TE-zlG" firstAttribute="centerX" secondItem="YtR-Gh-mqg" secondAttribute="centerX" id="qvw-gV-Fhr"/>
+                            <constraint firstItem="Wg9-X8-2CT" firstAttribute="trailing" secondItem="Vkw-TE-zlG" secondAttribute="trailing" constant="44" id="wUN-TT-tYH"/>
+                            <constraint firstItem="zbI-gb-ffe" firstAttribute="top" secondItem="gUY-7F-Tjs" secondAttribute="bottom" constant="31" id="xc8-mr-P1D"/>
+                            <constraint firstItem="Wg9-X8-2CT" firstAttribute="bottom" secondItem="zbI-gb-ffe" secondAttribute="bottom" constant="321" id="ycN-qv-fes"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="C2v-dn-XGp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IGy-hI-H3V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1425" y="-232"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="bNk-KN-4Tt">
+            <objects>
+                <viewController id="5T1-bt-klE" customClass="FourthViewController" customModule="GreenCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eI8-Sn-UmR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqQ-up-hWt">
+                                <rect key="frame" x="44" y="292" width="326" height="258"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="326" id="6Ey-TL-9v2"/>
+                                    <constraint firstAttribute="height" constant="258" id="7L1-Vx-EBJ"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="I'm sorry, this item cannot be recycled. Please properly dispose of this item in the trash. Thank you for your help!">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kbr-bg-qaS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qqQ-up-hWt" firstAttribute="centerX" secondItem="eI8-Sn-UmR" secondAttribute="centerX" id="3ew-71-F2Y"/>
+                            <constraint firstItem="qqQ-up-hWt" firstAttribute="centerY" secondItem="eI8-Sn-UmR" secondAttribute="centerY" id="Gre-Xn-aHH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fx1-ZF-bDY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0rs-zJ-CpG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1424.6376811594205" y="533.70535714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Green Code-3" width="500" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
