@@ -17,6 +17,11 @@
 		70286787268CBF2800214E9B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70286786268CBF2800214E9B /* SecondViewController.swift */; };
 		70286789268CBFB300214E9B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70286788268CBFB300214E9B /* ThirdViewController.swift */; };
 		7028678B268CBFBE00214E9B /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7028678A268CBFBE00214E9B /* FourthViewController.swift */; };
+		7028678F268CE0FB00214E9B /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7028678E268CE0FB00214E9B /* FifthViewController.swift */; };
+		70286791268CE26700214E9B /* SixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70286790268CE26700214E9B /* SixthViewController.swift */; };
+		70286793268CE50600214E9B /* SeventhViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70286792268CE50600214E9B /* SeventhViewController.swift */; };
+		70286795268CE52D00214E9B /* EighthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70286794268CE52D00214E9B /* EighthViewController.swift */; };
+		70286797268CE69B00214E9B /* NinthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70286796268CE69B00214E9B /* NinthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		70286786268CBF2800214E9B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		70286788268CBFB300214E9B /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		7028678A268CBFBE00214E9B /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		7028678E268CE0FB00214E9B /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		70286790268CE26700214E9B /* SixthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthViewController.swift; sourceTree = "<group>"; };
+		70286792268CE50600214E9B /* SeventhViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeventhViewController.swift; sourceTree = "<group>"; };
+		70286794268CE52D00214E9B /* EighthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighthViewController.swift; sourceTree = "<group>"; };
+		70286796268CE69B00214E9B /* NinthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +85,11 @@
 				70286786268CBF2800214E9B /* SecondViewController.swift */,
 				70286788268CBFB300214E9B /* ThirdViewController.swift */,
 				7028678A268CBFBE00214E9B /* FourthViewController.swift */,
+				7028678E268CE0FB00214E9B /* FifthViewController.swift */,
+				70286790268CE26700214E9B /* SixthViewController.swift */,
+				70286792268CE50600214E9B /* SeventhViewController.swift */,
+				70286794268CE52D00214E9B /* EighthViewController.swift */,
+				70286796268CE69B00214E9B /* NinthViewController.swift */,
 			);
 			path = GreenCode;
 			sourceTree = "<group>";
@@ -150,9 +165,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				70286774268CB35F00214E9B /* ViewController.swift in Sources */,
+				70286795268CE52D00214E9B /* EighthViewController.swift in Sources */,
+				70286791268CE26700214E9B /* SixthViewController.swift in Sources */,
 				70286770268CB35F00214E9B /* AppDelegate.swift in Sources */,
+				70286797268CE69B00214E9B /* NinthViewController.swift in Sources */,
 				7028677A268CB35F00214E9B /* GreenCode.xcdatamodeld in Sources */,
+				70286793268CE50600214E9B /* SeventhViewController.swift in Sources */,
 				7028678B268CBFBE00214E9B /* FourthViewController.swift in Sources */,
+				7028678F268CE0FB00214E9B /* FifthViewController.swift in Sources */,
 				70286787268CBF2800214E9B /* SecondViewController.swift in Sources */,
 				70286789268CBFB300214E9B /* ThirdViewController.swift in Sources */,
 				70286772268CB35F00214E9B /* SceneDelegate.swift in Sources */,
